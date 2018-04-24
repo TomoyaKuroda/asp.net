@@ -1,0 +1,50 @@
+﻿@model Final_Assignment1.Models.Model
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Model</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Engine_Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Engine_Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Doors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Doors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
